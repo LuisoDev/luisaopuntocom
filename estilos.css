@@ -1,0 +1,133 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-boz-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f0f2f1;
+	font-family: 'Roboto Condensed'
+}
+
+a {
+	text-decoration: none;
+
+}
+
+.contenedor {
+	max-width: 1200px;
+	margin:50px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.contenedor_tarjeta{
+	margin: 20px;
+}
+
+.contenedor_tarjeta a{
+	display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-ms-transform: perspective(600px) rotateY(180deg);
+	-o-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+	/*background-color: #000;*/
+
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5)
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+}
+
+.contenedor_tarjeta:hover figure img {
+	/*filter: blur(2px);*/
+}
+
+figure {
+	width: 225px
+	height: 350px;
+	margin: 0;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+
+}
+
+figure .frontal{
+	display: block;
+	/*backface-visibility: hidden;*/
+
+}
+
+figure .trasera{
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: #fff;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+
+	
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+	background: rgba(255,170,0,0.75);
+	background: -moz-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,170,0,0.75)), color-stop(25%, rgba(186,124,0,0.81)), color-stop(62%, rgba(3,15,33,0.91)), color-stop(100%, rgba(5,8,13,1)));
+	background: -webkit-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa00', endColorstr='#05080d', GradientType=0 );
+
+}
+
+figure .trasera .titulo {
+	color: #fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 24px;
+}
+
+figure .trasera hr{
+	height: 2px;
+	background: #fff;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+figure .trasera p{
+	font-family: 'Roboto Condensed', sans-serif;
+	line-height: 22px;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+	figure .trasera {
+		backface-visibility: visible;
+		transform: perspective(600px) rotateY(0deg);
+	}
+
+	.contenedor_tarjeta:hover figure {
+		transform: perspective(600px) rotateY(0deg);
+	}
+}
+
