@@ -1,79 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
+	<title>Portfolio de Luis Sanchez</title>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, user-scalabe=no, initial-scale=1.0, maximum-scake=1.0, minimum-scale=1.0">
-	<title>Pagina Personal</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+	initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
 </head>
 <body>
-	
-	<div class="contenedor">
-		<div class="contenedor_tarjeta">
-			<a href="#">
-				<figure>
-					<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
-				<figcaption class="trasera">
-					<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
-					<hr>
-					<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
-				</figcaption>
-				</figure>
-			</a>
-		</div>
 
-		<div class="contenedor_tarjeta">
-			<a href="#">
-				<figure>
-					<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
-				<figcaption class="trasera">
-					<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
-					<hr>
-					<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
-				</figcaption>
-				</figure>
-			</a>
-		</div>
+	<div class="contain">
+		<section class="tarjeta">
+			<section class="slider_banner">
+				<div class="banner" id="banner">
+					<img class="slide active" src="img/banner.jpg" alt="">
+					<img class="slide" src="img/banner3.jpg" alt="">
+					<img class="slide" src="img/banner4.jpg" alt="">
+				</div>
 
-		<div class="contenedor_tarjeta">
-			<a href="#">
-				<figure>
-					<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
-				<figcaption class="trasera">
-					<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
-					<hr>
-					<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
-				</figcaption>
-				</figure>
-			</a>
-		</div>
+				<a href="#" id="banner-prev" class="flecha-banner anterior"><span> < </span></a>
+				<a href="#" id="banner-next" class="flecha-banner siguiente"><span> > </span></a>
+			</section>
 
-		<div class="contenedor_tarjeta">
-			<a href="#">
-				<figure>
-					<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
-				<figcaption class="trasera">
-					<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
-					<hr>
-					<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
-				</figcaption>
-				</figure>
-			</a>
-		</div>
+			<section class="slider_info">
+				<a href="#" id="info-prev" class="flecha-info anterior"><span> < </span></a>
+				<a href="#" id="info-next" class="flecha-info siguiente"><span> > </span></a>
 
-		<div class="contenedor_tarjeta">
-			<a href="#">
-				<figure>
-					<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
-				<figcaption class="trasera">
-					<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
-					<hr>
-					<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
-				</figcaption>
-				</figure>
-			</a>
-		</div>
+				<section id="informacion" class="informacion">
+					<article id="info">
+						<div class="slide active">
+							<h1 class="nombre">Luis Sánchez</h1>
+							<p class="trabajo">Desarrollador web, apps y juegos</p>
+							<p class="pais">Estudiante de Ingeniería en Telecomunicaciones.</p>
+							<p class="pais"><img src="img/bandera.png" width="16" height="16" alt="">Venezuela</p>
+
+						</div>
+						<div class="slide">
+							<h2 class="subtitulo">Subtitulo</h2>
+							<p class="texto">Texto, texto, texto, texto.</p>
+						</div>
+						<div class="slide">
+							<h1 class="subtitulo">Proyectos</h1>
+							<div class="contenedor">
+								<div class="contenedor_tarjeta">
+									<a href="#">
+										<figure>
+											<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
+											<figcaption class="trasera">
+												<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
+												<hr>
+												<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="contenedor_tarjeta">
+									<a href="#">
+										<figure>
+											<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
+											<figcaption class="trasera">
+												<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
+												<hr>
+												<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+								<div class="contenedor_tarjeta">
+									<a href="#">
+										<figure>
+											<img src="img/portada.png" class="frontal" alt="" 	width="225" height="350">
+											<figcaption class="trasera">
+												<h2 class="titulo">Meteor Shower: Mi primer juego Android.</h2>
+												<hr>
+												<p>Desarrollada a finales del 2017 y publicada en inicios del 2018. Disponible su versión beta en la Play Store</p>
+											</figcaption>
+										</figure>
+									</a>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<div class="botones" id="botones"></div>
+				</section>
+			</section>
+
+			<section class="redes-sociales">
+				<a href="#" class="tw"><span class=""></span></a>
+				<a href="#" class="tw"><span class=""></span></a>
+				<a href="#" class="tw"><span class=""></span></a>
+			</section>
+		</section>
 	</div>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
