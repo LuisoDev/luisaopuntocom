@@ -9,7 +9,9 @@ $(document).ready(function(){
 	var info = {
 		padre: $('#info'),
 		numeroSlides: $('#info').children('.slide').length,
-		posicion: 1
+		posicion: 1, 
+		
+
 	}
 
 	info.padre.children('.slide').first().css({
@@ -30,9 +32,12 @@ $(document).ready(function(){
 	}
 	var altoInfo = function(){
 		var alto = info.padre.children('.active').outerHeight();
+		
 		info.padre.animate({
 			'height': alto + 'px'
 		});
+
+		
 
 		console.log(alto);
 	}
@@ -42,7 +47,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		altoBanner();
-		
+		altoInfo();
 	});
 
 	//BANNER

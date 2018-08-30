@@ -89,6 +89,9 @@ a {
 	padding: 20px 0;
 	z-index: 1000;
 	position: relative;
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5)
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
 }
 
 /*section informacion*/
@@ -175,19 +178,29 @@ a {
 	line-height: 26px;
 	
 }
+
+.slide hr{
+	height: 2px;
+	background: #444;
+	border: none;
+	margin-bottom: 20px;
+	
+}
 /*TARJETA*/
 
 .contenedor {
 	max-width: 1200px;
-	margin:25px auto;
+	margin:0px auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
 
 .contenedor_tarjeta{
 	margin: 20px;
+
 }
 
 .contenedor_tarjeta a{
@@ -195,14 +208,9 @@ a {
 }
 
 .contenedor_tarjeta:hover figure {
-	-webkit-transform: perspective(600px) rotateY(180deg);
-	-ms-transform: perspective(600px) rotateY(180deg);
-	-o-transform: perspective(600px) rotateY(180deg);
 	transform: perspective(600px) rotateY(180deg);
-	/*background-color: #000;*/
-
-	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5)
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25)
 	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
 }
 
@@ -231,6 +239,7 @@ figure .trasera {
 
 figure .frontal{
 	display: block;
+	background: #000;
 	/*backface-visibility: hidden;*/
 
 }
@@ -264,7 +273,7 @@ figure .trasera .titulo {
 	font-weight: normal;
 	margin-bottom: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 figure .trasera hr{
@@ -277,8 +286,8 @@ figure .trasera hr{
 
 figure .trasera p{
 	font-family: 'Roboto Condensed', sans-serif;
-	line-height: 22px;
-	font-size: 14px;
+	line-height: 16px;
+	font-size: 13px;
 }
 
 @media screen and (max-width: 225px) {
