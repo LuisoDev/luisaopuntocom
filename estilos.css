@@ -46,7 +46,7 @@ a {
 }
 
 .contenedor_tarjeta:hover figure img {
-	/*filter: blur(2px);*/
+	filter: blur(2px);
 }
 
 figure {
@@ -120,7 +120,7 @@ figure .trasera p{
 	font-size: 14px;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 225px) {
 	figure .trasera {
 		backface-visibility: visible;
 		transform: perspective(600px) rotateY(0deg);
