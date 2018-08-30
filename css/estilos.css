@@ -146,7 +146,7 @@ a {
 }
 
 .slider_info .informacion .trabajo{
-	color: #55acee;
+	color: /*#55acee*/#16ccb9;
 	font-size: 18px;
 	line-height: 18px;
 	margin-bottom: 16px;
@@ -167,7 +167,7 @@ a {
 }
 
 .slider_info .informacion .subtitulo {
-	color: #55acee;
+	color: /*#55acee*/#16ccb9;
 	font-size: 18px;
 	line-height: 18px;
 	margin-bottom: 16px;
@@ -257,14 +257,14 @@ figure .trasera{
 }
 
 .contenedor_tarjeta:nth-child(1) figure .trasera{
-	background: rgba(255,170,0,0.75);
-	background: -moz-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,170,0,0.75)), color-stop(25%, rgba(186,124,0,0.81)), color-stop(62%, rgba(3,15,33,0.91)), color-stop(100%, rgba(5,8,13,1)));
-	background: -webkit-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa00', endColorstr='#05080d', GradientType=0 );
+	background: rgba(184,238,245,0.75);
+background: -moz-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(184,238,245,0.75)), color-stop(0%, rgba(108,245,190,0.75)), color-stop(55%, rgba(0,105,143,0.89)), color-stop(95%, rgba(0,0,0,0.99)), color-stop(100%, rgba(0,0,0,1)));
+background: -webkit-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+background: linear-gradient(to bottom, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8eef5', endColorstr='#000000', GradientType=0 );
 
 }
 
@@ -299,4 +299,11 @@ figure .trasera p{
 	.contenedor_tarjeta:hover figure {
 		transform: perspective(600px) rotateY(0deg);
 	}
+}
+
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+
 }
