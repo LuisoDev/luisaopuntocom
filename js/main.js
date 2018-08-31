@@ -230,7 +230,7 @@ $(document).ready(function(){
 				'left': 0
 			});
 			altoInfo();
-			info.posicion = 3;
+			info.posicion = 4;
 		}
 
 		

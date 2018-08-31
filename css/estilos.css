@@ -161,9 +161,31 @@ a {
 	padding-bottom: 10px;
 }
 
+
+
 .slider_info .informacion .pais img{
 	position: relative;
 	top: 2px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .formacion{
+	color: #16ccb9;
+	font-size: 18px;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+
+.slider_info .informacion .formacion2{
+	color: #444;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+.slider_info .informacion .formacion img{
+	position: relative;
+	top: 5px;
 	margin-right: 10px;
 }
 
@@ -306,5 +328,66 @@ figure .trasera p{
 	width: 100%;
 	height: 100%;
 	position: fixed;
+
+}
+
+/*LENGUAJES DE PROGRAMACION*/
+
+
+.slider_info .informacion .lenguajep{
+	color: #444;
+	font-size: 14px;
+	line-height: 14px;
+	padding-bottom: 10px;
+}
+
+.slider_info .informacion .sub{
+	color: #444;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	padding-bottom: 5px;
+}
+
+.slider_info .informacion .sub2{
+	color: #444;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 15px;
+	
+}
+
+.slider_info .informacion hr{
+	height: 2px;
+	background: #444;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+
+
+
+
+.slider_info .informacion .lenguajep img{
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+	
+}
+
+.contenedor-l {
+	max-width: 1200px;
+	margin:0px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+.contenedor_lenguaje{
+	margin: 20px;
+	display: inline-block;
 
 }
