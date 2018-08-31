@@ -2,13 +2,15 @@
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
-	-moz-boz-sizing: border-box;
+	-moz-box-sizing:border-box;
 	box-sizing: border-box;
 }
 
 body {
-	background: #f0f2f1;
-	font-family: 'Roboto Condensed'
+	background: url('../img/bg.png');
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: 'Open Sans'
 }
 
 a {
@@ -16,17 +18,212 @@ a {
 
 }
 
+.contain {
+	width: 90%;
+	max-width: 800px;
+	margin: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.tarjeta {
+	background: #fff;
+	margin: 40px 0;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+	z-index: 1000;
+	
+}
+
+/** SLIDER BANNER**/
+
+.slider_banner {
+	overflow: hidden;
+	z-index: 900;
+	position: relative;
+
+}
+
+.slider_banner .banner{
+	position: relative;
+	width: 100%;
+	
+}
+
+.slider_banner .banner img{
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 100%;
+}
+
+.slider_banner .flecha-banner {
+	font-size: 55px;
+	line-height: 55px;
+	color: rgba(0,0,0,.2);
+	position: absolute;
+	top: 50%;
+	z-index: 1100;
+}
+
+.slider_banner .flecha-banner:hover{
+	color: rgba(0,0,0,.5);
+}
+
+.slider_banner .anterior {
+	left: 10px;
+}
+
+.slider_banner .siguiente {
+	right: 10px;
+}
+
+/** SLIDER BANNER**/
+
+.slider_info{
+	text-align:center;
+	overflow: hidden;
+	padding: 20px 0;
+	z-index: 1000;
+	position: relative;
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5)
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
+}
+
+/*section informacion*/
+.slider_info .informacion{
+	width: 100%;
+
+}
+
+.slider_info .informacion article{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider_info .informacion article .slide{
+	background: #fff;
+	width: 100%;
+	left: 100%;
+	position: absolute;
+	padding: 20px 80px;
+}
+
+.slider_info .flecha-info{
+	font-size: 55px;
+	line-height: 55px;
+	color: #e6e6e6;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+}
+
+.slider_info .flecha-info:hover {
+	color: #16ccb9;
+}
+
+.slider_info .flecha-info.anterior{
+	left: 20px;
+}
+
+.slider_info .flecha-info.siguiente{
+	right: 20px;
+}
+
+/*ESTILOS DE SLIDES*/
+.slider_info .informacion .nombre{
+	color: #444;
+	font-size: 38px;
+	line-height: 38px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	text-align: center;
+
+}
+
+.slider_info .informacion .trabajo{
+	color: /*#55acee*/#16ccb9;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+	
+}
+
+.slider_info .informacion .pais{
+	color: #8d8d8d;
+	font-size: 14px;
+	line-height: 14px;
+	padding-bottom: 10px;
+}
+
+
+
+.slider_info .informacion .pais img{
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .formacion{
+	color: #16ccb9;
+	font-size: 18px;
+	line-height: 18px;
+	padding-bottom: 10px;
+}
+
+.slider_info .informacion .formacion2{
+	color: #444;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+
+.slider_info .informacion .formacion img{
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+
+.slider_info .informacion .subtitulo {
+	color: /*#55acee*/#16ccb9;
+	font-size: 18px;
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+.slider_info .informacion .texto {
+	color: #444;
+	font-size: 14px;
+	line-height: 26px;
+	
+}
+
+.slide hr{
+	height: 2px;
+	background: #444;
+	border: none;
+	margin-bottom: 20px;
+	
+}
+/*TARJETA*/
+
 .contenedor {
 	max-width: 1200px;
-	margin:50px auto;
+	margin:0px auto;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
+
 }
 
 .contenedor_tarjeta{
 	margin: 20px;
+
 }
 
 .contenedor_tarjeta a{
@@ -34,14 +231,9 @@ a {
 }
 
 .contenedor_tarjeta:hover figure {
-	-webkit-transform: perspective(600px) rotateY(180deg);
-	-ms-transform: perspective(600px) rotateY(180deg);
-	-o-transform: perspective(600px) rotateY(180deg);
 	transform: perspective(600px) rotateY(180deg);
-	/*background-color: #000;*/
-
-	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5)
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25)
 	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.5);
 }
 
@@ -50,8 +242,8 @@ a {
 }
 
 figure {
-	width: 225px
-	height: 350px;
+	width: 112px
+	height: 174px;
 	margin: 0;
 	position: relative;
 	transition: all ease .5s;
@@ -70,6 +262,7 @@ figure .trasera {
 
 figure .frontal{
 	display: block;
+	background: #000;
 	/*backface-visibility: hidden;*/
 
 }
@@ -87,14 +280,14 @@ figure .trasera{
 }
 
 .contenedor_tarjeta:nth-child(1) figure .trasera{
-	background: rgba(255,170,0,0.75);
-	background: -moz-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,170,0,0.75)), color-stop(25%, rgba(186,124,0,0.81)), color-stop(62%, rgba(3,15,33,0.91)), color-stop(100%, rgba(5,8,13,1)));
-	background: -webkit-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -o-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: -ms-linear-gradient(top, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	background: linear-gradient(to bottom, rgba(255,170,0,0.75) 0%, rgba(186,124,0,0.81) 25%, rgba(3,15,33,0.91) 62%, rgba(5,8,13,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaa00', endColorstr='#05080d', GradientType=0 );
+	background: rgba(184,238,245,0.75);
+	background: -moz-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(184,238,245,0.75)), color-stop(0%, rgba(108,245,190,0.75)), color-stop(55%, rgba(0,105,143,0.89)), color-stop(95%, rgba(0,0,0,0.99)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(184,238,245,0.75) 0%, rgba(108,245,190,0.75) 0%, rgba(0,105,143,0.89) 55%, rgba(0,0,0,0.99) 95%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8eef5', endColorstr='#000000', GradientType=0 );
 
 }
 
@@ -103,7 +296,7 @@ figure .trasera .titulo {
 	font-weight: normal;
 	margin-bottom: 20px;
 	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 figure .trasera hr{
@@ -116,8 +309,8 @@ figure .trasera hr{
 
 figure .trasera p{
 	font-family: 'Roboto Condensed', sans-serif;
-	line-height: 22px;
-	font-size: 14px;
+	line-height: 16px;
+	font-size: 13px;
 }
 
 @media screen and (max-width: 225px) {
@@ -131,3 +324,80 @@ figure .trasera p{
 	}
 }
 
+#particles-js {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+
+}
+
+/*LENGUAJES DE PROGRAMACION*/
+
+
+.slider_info .informacion .lenguajep{
+	color: #444;
+	font-size: 13px;
+	line-height: 13px;
+	padding-bottom: 10px;
+}
+
+.slider_info .informacion .sub{
+	color: #444;
+	margin-top: 15px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 16px;
+	
+	margin-bottom: 20px;
+}
+
+.slider_info .informacion .sub2{
+	color: #444;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 15px;
+	
+}
+
+.slider_info .informacion hr{
+	height: 2px;
+	background: #444;
+	border: none;
+	margin-bottom: 20px;
+	opacity: .5;
+}
+
+
+
+
+
+.slider_info .informacion .lenguajep img{
+	vertical-align: top;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.contenedor-l {
+	max-width: 800px;
+	margin:0px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+
+
+.contenedor_lenguaje{
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 10px;
+	display: inline-block;
+
+}	
+.contenedor_lenguaje2{
+	margin: 20px;
+	display: inline-block;
+
+}
