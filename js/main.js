@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	
+
 	var banner = {
 		padre: $('#banner'),
 		numeroSlides: $('#banner').children('.slide').length,
@@ -10,7 +12,6 @@ $(document).ready(function(){
 		padre: $('#info'),
 		numeroSlides: $('#info').children('.slide').length,
 		posicion: 1, 
-		
 
 	}
 
@@ -21,6 +22,7 @@ $(document).ready(function(){
 	banner.padre.children('.slide').first().css({
 		'left':0
 	});
+
 
 	var altoBanner = function(){
 		var alto = banner.padre.children('.slide').outerHeight();
@@ -47,7 +49,7 @@ $(document).ready(function(){
 
 	$(window).resize(function(){
 		altoBanner();
-		altoInfo();
+
 	});
 
 	//BANNER
